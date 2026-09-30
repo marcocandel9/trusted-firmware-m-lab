@@ -1,0 +1,819 @@
+[INF] Starting bootloader
+[INF] Beginning BL2 provisioning
+[WRN] [1;31mTFM_DUMMY_PROVISIONING is not suitable for production! This device is [1;1mNOT SECURE[0m
+[INF] PSA Crypto init done, sig_type: EC-P256, using builtin keys
+[INF] Image index: 1, Swap type: none
+[INF] Image index: 0, Swap type: none
+[INF] Bootloader chainload address offset: 0x80000
+[INF] Image version: v2.3.1
+[INF] Jumping to the first image slot
+[NOT] Booting TF-M [1;34mv2.3.1[0m
+[NOT] Built [1;34mMon 21 Sep 2026 13:42:13 UTC[0m
+[INF] Beginning TF-M provisioning
+[WRN][1;31m TFM_DUMMY_PROVISIONING is not suitable for production! This device is [1;1mNOT SECURE[0m
+[WRN][1;31m This device was provisioned with dummy keys. This device is [1;1mNOT SECURE[0m
+[VER] Isolation level is: 1
+Creating an empty ITS flash layout.
+Creating an empty PS flash layout.
+[VER] [SFN Test] SFN Test Partition initialized
+[INF] [Crypto] Provision entropy seed...
+[INF] [Crypto] Provision entropy seed... [0;32mcomplete[0m.
+[VER] [Crypto] Init [0;32mTF-PSA-Crypto 1.1.1[0m...
+[VER] [Crypto] Internal heap size is 12288 bytes
+[VER] [Crypto] Init [0;32mTF-PSA-Crypto 1.1.1[0m... [0;32mcomplete[0m.
+[INF] [PS] Encryption alg: 0x5500200
+[33m
+#### Execute test suites for the Secure area ####
+[33mRunning Test Suite PSA protected storage S interface tests (TFM_S_PS_TEST_1XXX)...
+[0m> Executing 'TFM_S_PS_TEST_1001' 
+  Description: 'Set interface'
+[32m  TEST: TFM_S_PS_TEST_1001 - PASSED!
+[0m> Executing 'TFM_S_PS_TEST_1002' 
+  Description: 'Set interface with create flags'
+[32m  TEST: TFM_S_PS_TEST_1002 - PASSED!
+[0m> Executing 'TFM_S_PS_TEST_1003' 
+  Description: 'Set interface with NULL data pointer'
+[32m  TEST: TFM_S_PS_TEST_1003 - PASSED!
+[0m> Executing 'TFM_S_PS_TEST_1005' 
+  Description: 'Set interface with write once UID'
+[32m  TEST: TFM_S_PS_TEST_1005 - PASSED!
+[0m> Executing 'TFM_S_PS_TEST_1006' 
+  Description: 'Get interface with valid data'
+[32m  TEST: TFM_S_PS_TEST_1006 - PASSED!
+[0m> Executing 'TFM_S_PS_TEST_1007' 
+  Description: 'Get interface with zero data length'
+[32m  TEST: TFM_S_PS_TEST_1007 - PASSED!
+[0m> Executing 'TFM_S_PS_TEST_1008' 
+  Description: 'Get interface with invalid UIDs'
+[32m  TEST: TFM_S_PS_TEST_1008 - PASSED!
+[0m> Executing 'TFM_S_PS_TEST_1009' 
+  Description: 'Get interface with invalid data lengths and offsets'
+[32m  TEST: TFM_S_PS_TEST_1009 - PASSED!
+[0m> Executing 'TFM_S_PS_TEST_1010' 
+  Description: 'Get interface with NULL data pointer'
+[32m  TEST: TFM_S_PS_TEST_1010 - PASSED!
+[0m> Executing 'TFM_S_PS_TEST_1011' 
+  Description: 'Get info interface with write once UID'
+[32m  TEST: TFM_S_PS_TEST_1011 - PASSED!
+[0m> Executing 'TFM_S_PS_TEST_1012' 
+  Description: 'Get info interface with valid UID'
+[32m  TEST: TFM_S_PS_TEST_1012 - PASSED!
+[0m> Executing 'TFM_S_PS_TEST_1013' 
+  Description: 'Get info interface with invalid UIDs'
+[32m  TEST: TFM_S_PS_TEST_1013 - PASSED!
+[0m> Executing 'TFM_S_PS_TEST_1015' 
+  Description: 'Remove interface with valid UID'
+[32m  TEST: TFM_S_PS_TEST_1015 - PASSED!
+[0m> Executing 'TFM_S_PS_TEST_1016' 
+  Description: 'Remove interface with write once UID'
+[32m  TEST: TFM_S_PS_TEST_1016 - PASSED!
+[0m> Executing 'TFM_S_PS_TEST_1017' 
+  Description: 'Remove interface with invalid UID'
+[32m  TEST: TFM_S_PS_TEST_1017 - PASSED!
+[0m> Executing 'TFM_S_PS_TEST_1018' 
+  Description: 'Block compaction after remove'
+[32m  TEST: TFM_S_PS_TEST_1018 - PASSED!
+[0m> Executing 'TFM_S_PS_TEST_1019' 
+  Description: 'Multiple partial gets'
+[32m  TEST: TFM_S_PS_TEST_1019 - PASSED!
+[0m> Executing 'TFM_S_PS_TEST_1020' 
+  Description: 'Multiple sets to same UID from same thread'
+[32m  TEST: TFM_S_PS_TEST_1020 - PASSED!
+[0m> Executing 'TFM_S_PS_TEST_1021' 
+  Description: 'Get support interface'
+[32m  TEST: TFM_S_PS_TEST_1021 - PASSED!
+[0m> Executing 'TFM_S_PS_TEST_1022' 
+  Description: 'Set, get and remove interface with different asset sizes'
+[32m  TEST: TFM_S_PS_TEST_1022 - PASSED!
+[32mTESTSUITE PASSED!
+[33mRunning Test Suite PS reliability tests (TFM_PS_TEST_3XXX)...
+[0m> Executing 'TFM_S_PS_TEST_2001' 
+  Description: 'repetitive sets and gets in/from an asset'
+  > Iteration 1 of 15  > Iteration 2 of 15  > Iteration 3 of 15  > Iteration 4 of 15  > Iteration 5 of 15  > Iteration 6 of 15  > Iteration 7 of 15  > Iteration 8 of 15  > Iteration 9 of 15  > Iteration 10 of 15  > Iteration 11 of 15  > Iteration 12 of 15  > Iteration 13 of 15  > Iteration 14 of 15  > Iteration 15 of 15
+[32m  TEST: TFM_S_PS_TEST_2001 - PASSED!
+[0m> Executing 'TFM_S_PS_TEST_2002' 
+  Description: 'repetitive sets, gets and removes'
+  > Iteration 1 of 15  > Iteration 2 of 15  > Iteration 3 of 15  > Iteration 4 of 15  > Iteration 5 of 15  > Iteration 6 of 15  > Iteration 7 of 15  > Iteration 8 of 15  > Iteration 9 of 15  > Iteration 10 of 15  > Iteration 11 of 15  > Iteration 12 of 15  > Iteration 13 of 15  > Iteration 14 of 15  > Iteration 15 of 15
+[32m  TEST: TFM_S_PS_TEST_2002 - PASSED!
+[32mTESTSUITE PASSED!
+[33mRunning Test Suite PS rollback protection tests (TFM_S_PS_TEST_3XXX)...
+[0m> Executing 'TFM_S_PS_TEST_3001' 
+  Description: 'Check PS area version when NV counters 1/2/3 have the same value'
+[32m  TEST: TFM_S_PS_TEST_3001 - PASSED!
+[0m> Executing 'TFM_S_PS_TEST_3002' 
+  Description: 'Check PS area version when it is different from NV counters 1/2/3'
+[32m  TEST: TFM_S_PS_TEST_3002 - PASSED!
+[0m> Executing 'TFM_S_PS_TEST_3003' 
+  Description: 'Check PS area version when NV counters 1 and 2 are equals, 3 is different, and PS area version match NV counters 1 and 2'
+[32m  TEST: TFM_S_PS_TEST_3003 - PASSED!
+[0m> Executing 'TFM_S_PS_TEST_3004' 
+  Description: 'Check PS area version when NV counters 2 and 3 are equals, 1 is different and PS area version match NV counter 2 and 3'
+[32m  TEST: TFM_S_PS_TEST_3004 - PASSED!
+[0m> Executing 'TFM_S_PS_TEST_3005' 
+  Description: 'Check PS area version when NV counters 2 and 3 are equals, 1 is different and PS area version match NV counter 1'
+[32m  TEST: TFM_S_PS_TEST_3005 - PASSED!
+[0m> Executing 'TFM_S_PS_TEST_3006' 
+  Description: 'Check PS area version when NV counters 1, 2 and 3 have different values and PS area version match NV counter 1 value'
+[32m  TEST: TFM_S_PS_TEST_3006 - PASSED!
+[0m> Executing 'TFM_S_PS_TEST_3007' 
+  Description: 'Check PS area version when NV counters 1, 2 and 3 have different values and PS area version match NV counter 2 value'
+[32m  TEST: TFM_S_PS_TEST_3007 - PASSED!
+[0m> Executing 'TFM_S_PS_TEST_3008' 
+  Description: 'Check PS area version when NV counters 1, 2 and 3 have different values and PS area version match NV counter 3 value'
+[32m  TEST: TFM_S_PS_TEST_3008 - PASSED!
+[0m> Executing 'TFM_S_PS_TEST_3009' 
+  Description: 'Check PS area version when NV counter 1 cannot be incremented'
+[32m  TEST: TFM_S_PS_TEST_3009 - PASSED!
+[32mTESTSUITE PASSED!
+[33mRunning Test Suite PSA internal trusted storage S interface tests (TFM_S_ITS_TEST_1XXX)...
+[0m> Executing 'TFM_S_ITS_TEST_1001' 
+  Description: 'Set interface'
+[32m  TEST: TFM_S_ITS_TEST_1001 - PASSED!
+[0m> Executing 'TFM_S_ITS_TEST_1002' 
+  Description: 'Set interface with create flags and get latest set flag'
+[32m  TEST: TFM_S_ITS_TEST_1002 - PASSED!
+[0m> Executing 'TFM_S_ITS_TEST_1003' 
+  Description: 'Set interface with NULL data pointer'
+[32m  TEST: TFM_S_ITS_TEST_1003 - PASSED!
+[0m> Executing 'TFM_S_ITS_TEST_1004' 
+  Description: 'Set interface with write once UID'
+[32m  TEST: TFM_S_ITS_TEST_1004 - PASSED!
+[0m> Executing 'TFM_S_ITS_TEST_1005' 
+  Description: 'Get interface with valid data'
+[32m  TEST: TFM_S_ITS_TEST_1005 - PASSED!
+[0m> Executing 'TFM_S_ITS_TEST_1006' 
+  Description: 'Get interface with zero data length'
+[32m  TEST: TFM_S_ITS_TEST_1006 - PASSED!
+[0m> Executing 'TFM_S_ITS_TEST_1007' 
+  Description: 'Get interface with invalid UIDs'
+[32m  TEST: TFM_S_ITS_TEST_1007 - PASSED!
+[0m> Executing 'TFM_S_ITS_TEST_1008' 
+  Description: 'Get interface with data lengths and offsets greater than UID length'
+[32m  TEST: TFM_S_ITS_TEST_1008 - PASSED!
+[0m> Executing 'TFM_S_ITS_TEST_1009' 
+  Description: 'Get interface with NULL data pointer'
+[32m  TEST: TFM_S_ITS_TEST_1009 - PASSED!
+[0m> Executing 'TFM_S_ITS_TEST_1010' 
+  Description: 'Get info interface with write once UID'
+[32m  TEST: TFM_S_ITS_TEST_1010 - PASSED!
+[0m> Executing 'TFM_S_ITS_TEST_1011' 
+  Description: 'Get info interface with valid UID'
+[32m  TEST: TFM_S_ITS_TEST_1011 - PASSED!
+[0m> Executing 'TFM_S_ITS_TEST_1012' 
+  Description: 'Get info interface with invalid UIDs'
+[32m  TEST: TFM_S_ITS_TEST_1012 - PASSED!
+[0m> Executing 'TFM_S_ITS_TEST_1013' 
+  Description: 'Remove interface with valid UID'
+[32m  TEST: TFM_S_ITS_TEST_1013 - PASSED!
+[0m> Executing 'TFM_S_ITS_TEST_1014' 
+  Description: 'Remove interface with write once UID'
+[32m  TEST: TFM_S_ITS_TEST_1014 - PASSED!
+[0m> Executing 'TFM_S_ITS_TEST_1015' 
+  Description: 'Remove interface with invalid UID'
+[32m  TEST: TFM_S_ITS_TEST_1015 - PASSED!
+[0m> Executing 'TFM_S_ITS_TEST_1016' 
+  Description: 'Block compaction after remove'
+[32m  TEST: TFM_S_ITS_TEST_1016 - PASSED!
+[0m> Executing 'TFM_S_ITS_TEST_1017' 
+  Description: 'Multiple partial gets'
+[32m  TEST: TFM_S_ITS_TEST_1017 - PASSED!
+[0m> Executing 'TFM_S_ITS_TEST_1018' 
+  Description: 'Multiple sets to same UID from same thread'
+[32m  TEST: TFM_S_ITS_TEST_1018 - PASSED!
+[0m> Executing 'TFM_S_ITS_TEST_1019' 
+  Description: 'Set, get and remove interface with different asset sizes'
+[32m  TEST: TFM_S_ITS_TEST_1019 - PASSED!
+[0m> Executing 'TFM_S_ITS_TEST_1020' 
+  Description: 'Set with asset size that exceeds the maximum'
+[32m  TEST: TFM_S_ITS_TEST_1020 - PASSED!
+[0m> Executing 'TFM_S_ITS_TEST_1021' 
+  Description: 'Get interface with data_len over 0 and NULL data length pointer'
+[32m  TEST: TFM_S_ITS_TEST_1021 - PASSED!
+[0m> Executing 'TFM_S_ITS_TEST_1023' 
+  Description: 'Attempt to get a UID set by a different partition'
+[32m  TEST: TFM_S_ITS_TEST_1023 - PASSED!
+[32mTESTSUITE PASSED!
+[33mRunning Test Suite ITS reliability tests (TFM_ITS_TEST_2XXX)...
+[0m> Executing 'TFM_S_ITS_TEST_2001' 
+  Description: 'repetitive sets and gets in/from an asset'
+  > Iteration 1 of 15  > Iteration 2 of 15  > Iteration 3 of 15  > Iteration 4 of 15  > Iteration 5 of 15  > Iteration 6 of 15  > Iteration 7 of 15  > Iteration 8 of 15  > Iteration 9 of 15  > Iteration 10 of 15  > Iteration 11 of 15  > Iteration 12 of 15  > Iteration 13 of 15  > Iteration 14 of 15  > Iteration 15 of 15
+[32m  TEST: TFM_S_ITS_TEST_2001 - PASSED!
+[0m> Executing 'TFM_S_ITS_TEST_2002' 
+  Description: 'repetitive sets, gets and removes'
+  > Iteration 1 of 15  > Iteration 2 of 15  > Iteration 3 of 15  > Iteration 4 of 15  > Iteration 5 of 15  > Iteration 6 of 15  > Iteration 7 of 15  > Iteration 8 of 15  > Iteration 9 of 15  > Iteration 10 of 15  > Iteration 11 of 15  > Iteration 12 of 15  > Iteration 13 of 15  > Iteration 14 of 15  > Iteration 15 of 15
+[32m  TEST: TFM_S_ITS_TEST_2002 - PASSED!
+[32mTESTSUITE PASSED!
+[33mRunning Test Suite Crypto secure interface tests (TFM_S_CRYPTO_TEST_1XXX)...
+[0m> Executing 'TFM_S_CRYPTO_TEST_1001' 
+  Description: 'Secure Key management interface'
+[32m  TEST: TFM_S_CRYPTO_TEST_1001 - PASSED!
+[0m> Executing 'TFM_S_CRYPTO_TEST_1002' 
+  Description: 'Secure Symmetric encryption (AES-128-CBC) interface'
+[32m  TEST: TFM_S_CRYPTO_TEST_1002 - PASSED!
+[0m> Executing 'TFM_S_CRYPTO_TEST_1003' 
+  Description: 'Secure Symmetric encryption (AES-128-CFB) interface'
+[32m  TEST: TFM_S_CRYPTO_TEST_1003 - PASSED!
+[0m> Executing 'TFM_S_CRYPTO_TEST_1005' 
+  Description: 'Secure Symmetric encryption (AES-128-CTR) interface'
+[32m  TEST: TFM_S_CRYPTO_TEST_1005 - PASSED!
+[0m> Executing 'TFM_S_CRYPTO_TEST_1006' 
+  Description: 'Secure Symmetric encryption (AES-256-CTR) interface'
+[32m  TEST: TFM_S_CRYPTO_TEST_1006 - PASSED!
+[0m> Executing 'TFM_S_CRYPTO_TEST_1007' 
+  Description: 'Secure Symmetric encryption invalid cipher'
+[32m  TEST: TFM_S_CRYPTO_TEST_1007 - PASSED!
+[0m> Executing 'TFM_S_CRYPTO_TEST_1008' 
+  Description: 'Secure Symmetric encryption invalid cipher (AES-152)'
+[32m  TEST: TFM_S_CRYPTO_TEST_1008 - PASSED!
+[0m> Executing 'TFM_S_CRYPTO_TEST_1009' 
+  Description: 'Secure Symmetric encryption invalid cipher (HMAC-128-CFB)'
+[32m  TEST: TFM_S_CRYPTO_TEST_1009 - PASSED!
+[0m> Executing 'TFM_S_CRYPTO_TEST_1010' 
+  Description: 'Secure Unsupported Hash (SHA-1) interface'
+[32m  TEST: TFM_S_CRYPTO_TEST_1010 - PASSED!
+[0m> Executing 'TFM_S_CRYPTO_TEST_1011' 
+  Description: 'Secure Hash (SHA-224) interface'
+[32m  TEST: TFM_S_CRYPTO_TEST_1011 - PASSED!
+[0m> Executing 'TFM_S_CRYPTO_TEST_1012' 
+  Description: 'Secure Hash (SHA-256) interface'
+[32m  TEST: TFM_S_CRYPTO_TEST_1012 - PASSED!
+[0m> Executing 'TFM_S_CRYPTO_TEST_1019' 
+  Description: 'Secure Unsupported HMAC (SHA-1) interface'
+[32m  TEST: TFM_S_CRYPTO_TEST_1019 - PASSED!
+[0m> Executing 'TFM_S_CRYPTO_TEST_1020' 
+  Description: 'Secure HMAC (SHA-256) interface'
+[32m  TEST: TFM_S_CRYPTO_TEST_1020 - PASSED!
+[0m> Executing 'TFM_S_CRYPTO_TEST_1024' 
+  Description: 'Secure HMAC with long key (SHA-224) interface'
+[32m  TEST: TFM_S_CRYPTO_TEST_1024 - PASSED!
+[0m> Executing 'TFM_S_CRYPTO_TEST_1030' 
+  Description: 'Secure AEAD (AES-128-CCM) interface'
+[32m  TEST: TFM_S_CRYPTO_TEST_1030 - PASSED!
+[0m> Executing 'TFM_S_CRYPTO_TEST_1031' 
+  Description: 'Secure AEAD (AES-128-GCM) interface'
+[32m  TEST: TFM_S_CRYPTO_TEST_1031 - PASSED!
+[0m> Executing 'TFM_S_CRYPTO_TEST_1032' 
+  Description: 'Secure key policy interface'
+[32m  TEST: TFM_S_CRYPTO_TEST_1032 - PASSED!
+[0m> Executing 'TFM_S_CRYPTO_TEST_1033' 
+  Description: 'Secure key policy check permissions'
+[32m  TEST: TFM_S_CRYPTO_TEST_1033 - PASSED!
+[0m> Executing 'TFM_S_CRYPTO_TEST_1035' 
+  Description: 'Key access control'
+[32m  TEST: TFM_S_CRYPTO_TEST_1035 - PASSED!
+[0m> Executing 'TFM_S_CRYPTO_TEST_1036' 
+  Description: 'Secure AEAD interface with truncated auth tag (AES-128-CCM-8)'
+[32m  TEST: TFM_S_CRYPTO_TEST_1036 - PASSED!
+[0m> Executing 'TFM_S_CRYPTO_TEST_1037' 
+  Description: 'Secure TLS 1.2 PRF key derivation'
+[32m  TEST: TFM_S_CRYPTO_TEST_1037 - PASSED!
+[0m> Executing 'TFM_S_CRYPTO_TEST_1038' 
+  Description: 'Secure TLS-1.2 PSK-to-MasterSecret key derivation'
+[32m  TEST: TFM_S_CRYPTO_TEST_1038 - PASSED!
+[0m> Executing 'TFM_S_CRYPTO_TEST_1039' 
+  Description: 'Secure HKDF key derivation'
+[32m  TEST: TFM_S_CRYPTO_TEST_1039 - PASSED!
+[0m> Executing 'TFM_S_CRYPTO_TEST_1040' 
+  Description: 'Secure ECDH key agreement'
+[32m  TEST: TFM_S_CRYPTO_TEST_1040 - PASSED!
+[0m> Executing 'TFM_S_CRYPTO_TEST_1041' 
+  Description: 'Secure Symmetric encryption (AES-128-OFB) interface'
+[32m  TEST: TFM_S_CRYPTO_TEST_1041 - PASSED!
+[0m> Executing 'TFM_S_CRYPTO_TEST_1042' 
+  Description: 'Secure Symmetric encryption (AES-128-ECB) interface'
+[32m  TEST: TFM_S_CRYPTO_TEST_1042 - PASSED!
+[0m> Executing 'TFM_S_CRYPTO_TEST_1043' 
+  Description: 'Secure Asymmetric encryption interface (RSA-OAEP)'
+[32m  TEST: TFM_S_CRYPTO_TEST_1043 - PASSED!
+[0m> Executing 'TFM_S_CRYPTO_TEST_1044' 
+  Description: 'Secure Asymmetric encryption interface (RSA-PKCS1V15)'
+[32m  TEST: TFM_S_CRYPTO_TEST_1044 - PASSED!
+[0m> Executing 'TFM_S_CRYPTO_TEST_1045' 
+  Description: 'Secure Sign and verify message interface (DETERMINISTIC_ECDSA-SECP256R1-SHA256)'
+[32m  TEST: TFM_S_CRYPTO_TEST_1045 - PASSED!
+[0m> Executing 'TFM_S_CRYPTO_TEST_1054' 
+  Description: 'Secure sign and verify hash interface (ECDSA-SECP256R1-SHA256)'
+hash: 8d2da5845d2bc7b6ec66509e1899606983ed46e21bb4bd4ddc8161ab5eb7cf54
+signature: 81c20eb06f52940e3e04a3f905161b2d0475670d1289f82b063f06e15c875282e70243408e170c22a5ec406af6b5d7e0ef853c8f467e5c6bc86e72fcfaf60fd8
+[32m  TEST: TFM_S_CRYPTO_TEST_1054 - PASSED!
+[0m> Executing 'TFM_S_CRYPTO_TEST_1056' 
+  Description: 'Secure Sign and verify hash interface (ECDSA-SECP384R1-SHA384)'
+P384 is unsupported. Skipping...
+[32m  TEST: TFM_S_CRYPTO_TEST_1056 - PASSED!
+[0m> Executing 'TFM_S_CRYPTO_TEST_1046' 
+  Description: 'Secure Symmetric encryption (AES-128-CBC-PKCS7) interface'
+[32m  TEST: TFM_S_CRYPTO_TEST_1046 - PASSED!
+[0m> Executing 'TFM_S_CRYPTO_TEST_1047' 
+  Description: 'Secure Symmetric encryption (AES-128-CBC-PKCS7) interface, shorter'
+[32m  TEST: TFM_S_CRYPTO_TEST_1047 - PASSED!
+[0m> Executing 'TFM_S_CRYPTO_TEST_1048' 
+  Description: 'Secure Symmetric encryption (AES-128-CBC-PKCS7) interface, longer'
+[32m  TEST: TFM_S_CRYPTO_TEST_1048 - PASSED!
+[0m> Executing 'TFM_S_CRYPTO_TEST_1053' 
+  Description: 'Secure RSASSA-PSS signature verification (RSASSA-PSS-SHA256)'
+[32m  TEST: TFM_S_CRYPTO_TEST_1053 - PASSED!
+[0m> Executing 'TFM_S_CRYPTO_TEST_1055' 
+  Description: 'Secure authenticator based on AEAD'
+REF(0)TAG: 0x60, 0x9b, 0x3d, 0x51, 0x91, 0x60, 0x8, 0x17, 0x82, 0xec, 0x63, 0x21, 0x3a, 0x4, 0xdc, 0x93, 
+REF(1)TAG: 0xff, 0x66, 0xb8, 0x6, 0x7b, 0x76, 0x91, 0x8f, 0x76, 0x49, 0x2e, 0x56, 0xe2, 0xa2, 0x80, 0x62, 
+REF(0)TAG: 0x59, 0x93, 0x96, 0x41, 0x29, 0xe6, 0xe4, 0x25, 0x41, 0xcc, 0x64, 0x90, 0x6e, 0xdf, 0x4c, 0xee, 
+REF(1)TAG: 0x5e, 0x29, 0xf4, 0x3c, 0xe9, 0x94, 0x2e, 0xa4, 0xc3, 0x9d, 0x61, 0x91, 0x9a, 0x46, 0xf5, 0x75, 
+[32m  TEST: TFM_S_CRYPTO_TEST_1055 - PASSED!
+[0m> Executing 'TFM_S_CRYPTO_TEST_1057' 
+  Description: 'Secure SP800-108 Counter CMAC key derivation'
+Running SP800-108 CMAC vector #1 (with context)...
+Running SP800-108 CMAC vector #2 (without context)...
+All SP800-108 CMAC test vectors passed
+[32m  TEST: TFM_S_CRYPTO_TEST_1057 - PASSED!
+[32mTESTSUITE PASSED!
+[33mRunning Test Suite Initial Attestation Service secure interface tests(TFM_S_ATTEST_TEST_1XXX)...
+[0m> Executing 'TFM_S_ATTEST_TEST_1001' 
+  Description: 'ECDSA signature test of attest token'
+[INF] [Attest] The platform did not return a profile_definition
+[INF] [Attest] Encoding profile_definition (size: 17): PSA_IOT_PROFILE_1
+
+########### token(len: 548): ###########
+ 0xD2 0x84 0x43 0xA1 0x01 0x26 0xA0 0x59
+ 0x01 0xD8 0xAA 0x3A 0x00 0x01 0x24 0xFF
+ 0x58 0x40 0x00 0x00 0x00 0x00 0x00 0x00
+ 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00
+ 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00
+ 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00
+ 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00
+ 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00
+ 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00
+ 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00
+ 0x00 0x00 0x3A 0x00 0x01 0x24 0xFB 0x58
+ 0x20 0xA0 0xA1 0xA2 0xA3 0xA4 0xA5 0xA6
+ 0xA7 0xA8 0xA9 0xAA 0xAB 0xAC 0xAD 0xAE
+ 0xAF 0xB0 0xB1 0xB2 0xB3 0xB4 0xB5 0xB6
+ 0xB7 0xB8 0xB9 0xBA 0xBB 0xBC 0xBD 0xBE
+ 0xBF 0x3A 0x00 0x01 0x25 0x00 0x58 0x21
+ 0x01 0x07 0x8C 0x18 0xF1 0x10 0xF4 0x32
+ 0xFF 0x78 0x0C 0xD8 0xDA 0xE5 0x80 0x69
+ 0xA2 0xA0 0xD8 0x22 0x77 0xCB 0xC6 0x64
+ 0x50 0xC8 0x58 0x1D 0xD4 0x7D 0x96 0xA2
+ 0x2E 0x3A 0x00 0x01 0x24 0xFA 0x58 0x20
+ 0xAA 0xAA 0xAA 0xAA 0xAA 0xAA 0xAA 0xAA
+ 0xBB 0xBB 0xBB 0xBB 0xBB 0xBB 0xBB 0xBB
+ 0xCC 0xCC 0xCC 0xCC 0xCC 0xCC 0xCC 0xCC
+ 0xDD 0xDD 0xDD 0xDD 0xDD 0xDD 0xDD 0xDD
+ 0x3A 0x00 0x01 0x24 0xF8 0x19 0x0B 0xBA
+ 0x3A 0x00 0x01 0x24 0xF9 0x19 0x30 0x00
+ 0x3A 0x00 0x01 0x24 0xFD 0x82 0xA5 0x01
+ 0x63 0x53 0x50 0x45 0x04 0x65 0x32 0x2E
+ 0x33 0x2E 0x31 0x05 0x58 0x20 0xE3 0x04
+ 0x66 0xF6 0xB8 0x47 0x0C 0x1F 0x29 0x07
+ 0x0B 0x17 0xF1 0xE2 0xD3 0xE9 0x4D 0x44
+ 0x5E 0x3F 0x60 0x80 0x87 0xFD 0xC7 0x11
+ 0xE4 0x38 0x2B 0xB5 0x38 0xB6 0x06 0x66
+ 0x53 0x48 0x41 0x32 0x35 0x36 0x02 0x58
+ 0x20 0x21 0x9C 0x3A 0xB5 0x4E 0x59 0x0D
+ 0x80 0x6C 0x15 0x7A 0x56 0x98 0x4C 0x9C
+ 0x7E 0x5D 0x0C 0x35 0x23 0x0D 0x8B 0x9C
+ 0x08 0x5B 0x5F 0xE9 0x18 0xB0 0x29 0xCD
+ 0x3E 0xA5 0x01 0x64 0x4E 0x53 0x50 0x45
+ 0x04 0x65 0x30 0x2E 0x30 0x2E 0x30 0x05
+ 0x58 0x20 0x82 0xA5 0xB4 0x43 0x59 0x48
+ 0x53 0xD4 0xBF 0x0F 0xDD 0x89 0xA9 0x14
+ 0xA5 0xDC 0x16 0xF8 0x67 0x54 0x82 0x07
+ 0xD7 0x07 0x7E 0x74 0xD8 0x0C 0x06 0x3E
+ 0xFD 0xA9 0x06 0x66 0x53 0x48 0x41 0x32
+ 0x35 0x36 0x02 0x58 0x20 0xBB 0x5E 0xBB
+ 0x0F 0xB4 0x2C 0x10 0x3C 0x95 0xE4 0x14
+ 0x44 0x70 0x42 0xD5 0x5E 0x51 0x58 0xE6
+ 0x91 0xE0 0xB4 0x76 0x04 0x65 0x68 0xE5
+ 0xA4 0xB5 0x1A 0xCF 0xF4 0x3A 0x00 0x01
+ 0x24 0xF7 0x71 0x50 0x53 0x41 0x5F 0x49
+ 0x4F 0x54 0x5F 0x50 0x52 0x4F 0x46 0x49
+ 0x4C 0x45 0x5F 0x31 0x3A 0x00 0x01 0x25
+ 0x01 0x77 0x77 0x77 0x77 0x2E 0x74 0x72
+ 0x75 0x73 0x74 0x65 0x64 0x66 0x69 0x72
+ 0x6D 0x77 0x61 0x72 0x65 0x2E 0x6F 0x72
+ 0x67 0x3A 0x00 0x01 0x24 0xFC 0x73 0x30
+ 0x36 0x30 0x34 0x35 0x36 0x35 0x32 0x37
+ 0x32 0x38 0x32 0x39 0x2D 0x31 0x30 0x30
+ 0x31 0x30 0x58 0x40 0x76 0x4E 0x1A 0x4A
+ 0x97 0x22 0x66 0x7E 0xCF 0x7D 0x89 0xDD
+ 0x12 0xC0 0xEA 0x0A 0x40 0xE2 0xA7 0xFA
+ 0x0E 0xFD 0x05 0x08 0xE3 0x34 0x66 0xC4
+ 0x8A 0x8C 0xA0 0x6D 0xDA 0xBA 0x10 0x84
+ 0x5A 0xB6 0x4C 0xE5 0x2C 0xA4 0x98 0x32
+ 0xE6 0x55 0x69 0x9F 0x02 0x97 0xF8 0xDC
+ 0xBD 0x60 0xC7 0x14 0x2E 0xCF 0xB6 0x67
+ 0x31 0xFE 0x48 0xDC
+############## token end  ##############
+[32m  TEST: TFM_S_ATTEST_TEST_1001 - PASSED!
+[0m> Executing 'TFM_S_ATTEST_TEST_1002' 
+  Description: 'Negative test cases for initial attestation service'
+[INF] [Attest] The platform did not return a profile_definition
+[INF] [Attest] Encoding profile_definition (size: 17): PSA_IOT_PROFILE_1
+[INF] [Attest] The platform did not return a profile_definition
+[INF] [Attest] Encoding profile_definition (size: 17): PSA_IOT_PROFILE_1
+[32m  TEST: TFM_S_ATTEST_TEST_1002 - PASSED!
+[32mTESTSUITE PASSED!
+[33mRunning Test Suite Platform Service Secure interface tests(TFM_S_PLATFORM_TEST_1XXX)...
+[0m> Executing 'TFM_S_PLATFORM_TEST_1001' 
+  Description: 'Minimal platform service test'
+[32m  TEST: TFM_S_PLATFORM_TEST_1001 - PASSED!
+[32mTESTSUITE PASSED!
+[33m
+*** Secure test suites summary ***
+[0mTest suite 'PSA protected storage S interface tests (TFM_S_PS_TEST_1XXX)' has[32m PASSED
+[0mTest suite 'PS reliability tests (TFM_PS_TEST_3XXX)' has[32m PASSED
+[0mTest suite 'PS rollback protection tests (TFM_S_PS_TEST_3XXX)' has[32m PASSED
+[0mTest suite 'PSA internal trusted storage S interface tests (TFM_S_ITS_TEST_1XXX)' has[32m PASSED
+[0mTest suite 'ITS reliability tests (TFM_ITS_TEST_2XXX)' has[32m PASSED
+[0mTest suite 'Crypto secure interface tests (TFM_S_CRYPTO_TEST_1XXX)' has[32m PASSED
+[0mTest suite 'Initial Attestation Service secure interface tests(TFM_S_ATTEST_TEST_1XXX)' has[32m PASSED
+[0mTest suite 'Platform Service Secure interface tests(TFM_S_PLATFORM_TEST_1XXX)' has[32m PASSED
+[33m
+*** End of Secure test suites ***
+[0mNon-Secure system starting...
+[33m
+#### Execute test suites for the Non-secure area ####
+[33mRunning Test Suite SFN Backend NS test (TFM_NS_SFN_TEST_1XXX)...
+[0m> Executing 'TFM_NS_SFN_TEST_1001' 
+  Description: 'Get PSA framework version'
+[32m  TEST: TFM_NS_SFN_TEST_1001 - PASSED!
+[0m> Executing 'TFM_NS_SFN_TEST_1002' 
+  Description: 'Get version of an RoT Service'
+[32m  TEST: TFM_NS_SFN_TEST_1002 - PASSED!
+[0m> Executing 'TFM_NS_SFN_TEST_1003' 
+  Description: 'Request a connection-based RoT Service'
+[32m  TEST: TFM_NS_SFN_TEST_1003 - PASSED!
+[0m> Executing 'TFM_NS_SFN_TEST_1004' 
+  Description: 'Request a stateless RoT Service'
+[32m  TEST: TFM_NS_SFN_TEST_1004 - PASSED!
+[0m> Executing 'TFM_NS_SFN_TEST_1008' 
+  Description: 'Request to a refused connection'
+[32m  TEST: TFM_NS_SFN_TEST_1008 - PASSED!
+[32mTESTSUITE PASSED!
+[33mRunning Test Suite PSA protected storage NS interface tests (TFM_NS_PS_TEST_1XXX)...
+[0m> Executing 'TFM_NS_PS_TEST_1001' 
+  Description: 'Set interface'
+[32m  TEST: TFM_NS_PS_TEST_1001 - PASSED!
+[0m> Executing 'TFM_NS_PS_TEST_1002' 
+  Description: 'Set interface with create flags'
+[32m  TEST: TFM_NS_PS_TEST_1002 - PASSED!
+[0m> Executing 'TFM_NS_PS_TEST_1003' 
+  Description: 'Set interface with NULL data pointer'
+[32m  TEST: TFM_NS_PS_TEST_1003 - PASSED!
+[0m> Executing 'TFM_NS_PS_TEST_1004' 
+  Description: 'Set interface with write once UID'
+[32m  TEST: TFM_NS_PS_TEST_1004 - PASSED!
+[0m> Executing 'TFM_NS_PS_TEST_1005' 
+  Description: 'Get interface with valid data'
+[32m  TEST: TFM_NS_PS_TEST_1005 - PASSED!
+[0m> Executing 'TFM_NS_PS_TEST_1006' 
+  Description: 'Get interface with zero data length'
+[32m  TEST: TFM_NS_PS_TEST_1006 - PASSED!
+[0m> Executing 'TFM_NS_PS_TEST_1007' 
+  Description: 'Get interface with invalid UIDs'
+[32m  TEST: TFM_NS_PS_TEST_1007 - PASSED!
+[0m> Executing 'TFM_NS_PS_TEST_1008' 
+  Description: 'Get interface with invalid data lengths and offsets'
+[32m  TEST: TFM_NS_PS_TEST_1008 - PASSED!
+[0m> Executing 'TFM_NS_PS_TEST_1009' 
+  Description: 'Get interface with NULL data pointer'
+[32m  TEST: TFM_NS_PS_TEST_1009 - PASSED!
+[0m> Executing 'TFM_NS_PS_TEST_1010' 
+  Description: 'Get info interface with write once UID'
+[32m  TEST: TFM_NS_PS_TEST_1010 - PASSED!
+[0m> Executing 'TFM_NS_PS_TEST_1011' 
+  Description: 'Get info interface with valid UID'
+[32m  TEST: TFM_NS_PS_TEST_1011 - PASSED!
+[0m> Executing 'TFM_NS_PS_TEST_1012' 
+  Description: 'Get info interface with invalid UIDs'
+[32m  TEST: TFM_NS_PS_TEST_1012 - PASSED!
+[0m> Executing 'TFM_NS_PS_TEST_1013' 
+  Description: 'Remove interface with valid UID'
+[32m  TEST: TFM_NS_PS_TEST_1013 - PASSED!
+[0m> Executing 'TFM_NS_PS_TEST_1014' 
+  Description: 'Remove interface with write once UID'
+[32m  TEST: TFM_NS_PS_TEST_1014 - PASSED!
+[0m> Executing 'TFM_NS_PS_TEST_1015' 
+  Description: 'Remove interface with invalid UID'
+[32m  TEST: TFM_NS_PS_TEST_1015 - PASSED!
+[0m> Executing 'TFM_NS_PS_TEST_1021' 
+  Description: 'Block compaction after remove'
+[32m  TEST: TFM_NS_PS_TEST_1021 - PASSED!
+[0m> Executing 'TFM_NS_PS_TEST_1022' 
+  Description: 'Multiple partial gets'
+[32m  TEST: TFM_NS_PS_TEST_1022 - PASSED!
+[0m> Executing 'TFM_NS_PS_TEST_1023' 
+  Description: 'Multiple sets to same UID from same thread'
+[32m  TEST: TFM_NS_PS_TEST_1023 - PASSED!
+[0m> Executing 'TFM_NS_PS_TEST_1024' 
+  Description: 'Get support interface'
+[32m  TEST: TFM_NS_PS_TEST_1024 - PASSED!
+[0m> Executing 'TFM_NS_PS_TEST_1025' 
+  Description: 'Set, get and remove interface with different asset sizes'
+[32m  TEST: TFM_NS_PS_TEST_1025 - PASSED!
+[32mTESTSUITE PASSED!
+[33mRunning Test Suite PSA internal trusted storage NS interface tests (TFM_NS_ITS_TEST_1XXX)...
+[0m> Executing 'TFM_NS_ITS_TEST_1001' 
+  Description: 'Set interface'
+[32m  TEST: TFM_NS_ITS_TEST_1001 - PASSED!
+[0m> Executing 'TFM_NS_ITS_TEST_1002' 
+  Description: 'Set interface with create flags and get latest set flag'
+[32m  TEST: TFM_NS_ITS_TEST_1002 - PASSED!
+[0m> Executing 'TFM_NS_ITS_TEST_1003' 
+  Description: 'Set interface with NULL data pointer'
+[32m  TEST: TFM_NS_ITS_TEST_1003 - PASSED!
+[0m> Executing 'TFM_NS_ITS_TEST_1004' 
+  Description: 'Set interface with write once UID'
+[32m  TEST: TFM_NS_ITS_TEST_1004 - PASSED!
+[0m> Executing 'TFM_NS_ITS_TEST_1005' 
+  Description: 'Get interface with valid data'
+[32m  TEST: TFM_NS_ITS_TEST_1005 - PASSED!
+[0m> Executing 'TFM_NS_ITS_TEST_1006' 
+  Description: 'Get interface with zero data length'
+[32m  TEST: TFM_NS_ITS_TEST_1006 - PASSED!
+[0m> Executing 'TFM_NS_ITS_TEST_1007' 
+  Description: 'Get interface with invalid UIDs'
+[32m  TEST: TFM_NS_ITS_TEST_1007 - PASSED!
+[0m> Executing 'TFM_NS_ITS_TEST_1008' 
+  Description: 'Get interface with invalid data lengths and offsets'
+[32m  TEST: TFM_NS_ITS_TEST_1008 - PASSED!
+[0m> Executing 'TFM_NS_ITS_TEST_1009' 
+  Description: 'Get interface with NULL data pointer'
+[32m  TEST: TFM_NS_ITS_TEST_1009 - PASSED!
+[0m> Executing 'TFM_NS_ITS_TEST_1010' 
+  Description: 'Get info interface with write once UID'
+[32m  TEST: TFM_NS_ITS_TEST_1010 - PASSED!
+[0m> Executing 'TFM_NS_ITS_TEST_1011' 
+  Description: 'Get info interface with valid UID'
+[32m  TEST: TFM_NS_ITS_TEST_1011 - PASSED!
+[0m> Executing 'TFM_NS_ITS_TEST_1012' 
+  Description: 'Get info interface with invalid UIDs'
+[32m  TEST: TFM_NS_ITS_TEST_1012 - PASSED!
+[0m> Executing 'TFM_NS_ITS_TEST_1013' 
+  Description: 'Remove interface with valid UID'
+[32m  TEST: TFM_NS_ITS_TEST_1013 - PASSED!
+[0m> Executing 'TFM_NS_ITS_TEST_1014' 
+  Description: 'Remove interface with write once UID'
+[32m  TEST: TFM_NS_ITS_TEST_1014 - PASSED!
+[0m> Executing 'TFM_NS_ITS_TEST_1015' 
+  Description: 'Remove interface with invalid UID'
+[32m  TEST: TFM_NS_ITS_TEST_1015 - PASSED!
+[0m> Executing 'TFM_NS_ITS_TEST_1016' 
+  Description: 'Block compaction after remove'
+[32m  TEST: TFM_NS_ITS_TEST_1016 - PASSED!
+[0m> Executing 'TFM_NS_ITS_TEST_1017' 
+  Description: 'Multiple partial gets'
+[32m  TEST: TFM_NS_ITS_TEST_1017 - PASSED!
+[0m> Executing 'TFM_NS_ITS_TEST_1018' 
+  Description: 'Multiple sets to same UID from same thread'
+[32m  TEST: TFM_NS_ITS_TEST_1018 - PASSED!
+[0m> Executing 'TFM_NS_ITS_TEST_1019' 
+  Description: 'Set, get and remove interface with different asset sizes'
+[32m  TEST: TFM_NS_ITS_TEST_1019 - PASSED!
+[0m> Executing 'TFM_NS_ITS_TEST_1020' 
+  Description: 'Set with asset size that exceeds the maximum'
+[32m  TEST: TFM_NS_ITS_TEST_1020 - PASSED!
+[0m> Executing 'TFM_NS_ITS_TEST_1021' 
+  Description: 'Get interface with data_len over 0 and NULL data length pointer'
+[32m  TEST: TFM_NS_ITS_TEST_1021 - PASSED!
+[0m> Executing 'TFM_NS_ITS_TEST_001' 
+  Description: 'Set interface with NULL data pointer and length over 0'
+[32m  TEST: TFM_NS_ITS_TEST_001 - PASSED!
+[0m> Executing 'TFM_NS_ITS_TEST_002' 
+  Description: 'Get info interface with NULL p_info'
+[32m  TEST: TFM_NS_ITS_TEST_002 - PASSED!
+[0m> Executing 'TFM_NS_ITS_TEST_003' 
+  Description: 'Get interface with NULL data pointer and data_size over 0'
+[32m  TEST: TFM_NS_ITS_TEST_003 - PASSED!
+[32mTESTSUITE PASSED!
+[33mRunning Test Suite Crypto non-secure interface test (TFM_NS_CRYPTO_TEST_1XXX)...
+[0m> Executing 'TFM_NS_CRYPTO_TEST_1001' 
+  Description: 'Non Secure Key management interface'
+[32m  TEST: TFM_NS_CRYPTO_TEST_1001 - PASSED!
+[0m> Executing 'TFM_NS_CRYPTO_TEST_1002' 
+  Description: 'Non Secure Symmetric encryption (AES-128-CBC) interface'
+[32m  TEST: TFM_NS_CRYPTO_TEST_1002 - PASSED!
+[0m> Executing 'TFM_NS_CRYPTO_TEST_1003' 
+  Description: 'Non Secure Symmetric encryption (AES-128-CFB) interface'
+[32m  TEST: TFM_NS_CRYPTO_TEST_1003 - PASSED!
+[0m> Executing 'TFM_NS_CRYPTO_TEST_1005' 
+  Description: 'Non Secure Symmetric encryption (AES-128-CTR) interface'
+[32m  TEST: TFM_NS_CRYPTO_TEST_1005 - PASSED!
+[0m> Executing 'TFM_NS_CRYPTO_TEST_1006' 
+  Description: 'Non Secure Symmetric encryption (AES-256-CTR) interface'
+[32m  TEST: TFM_NS_CRYPTO_TEST_1006 - PASSED!
+[0m> Executing 'TFM_NS_CRYPTO_TEST_1007' 
+  Description: 'Non Secure Symmetric encryption invalid cipher'
+[32m  TEST: TFM_NS_CRYPTO_TEST_1007 - PASSED!
+[0m> Executing 'TFM_NS_CRYPTO_TEST_1008' 
+  Description: 'Non Secure Symmetric encryption invalid cipher (AES-152)'
+[32m  TEST: TFM_NS_CRYPTO_TEST_1008 - PASSED!
+[0m> Executing 'TFM_NS_CRYPTO_TEST_1009' 
+  Description: 'Non Secure Symmetric encryption invalid cipher (HMAC-128-CFB)'
+[32m  TEST: TFM_NS_CRYPTO_TEST_1009 - PASSED!
+[0m> Executing 'TFM_NS_CRYPTO_TEST_1010' 
+  Description: 'Non Secure Unsupported Hash (SHA-1) interface'
+[32m  TEST: TFM_NS_CRYPTO_TEST_1010 - PASSED!
+[0m> Executing 'TFM_NS_CRYPTO_TEST_1011' 
+  Description: 'Non Secure Hash (SHA-224) interface'
+[32m  TEST: TFM_NS_CRYPTO_TEST_1011 - PASSED!
+[0m> Executing 'TFM_NS_CRYPTO_TEST_1012' 
+  Description: 'Non Secure Hash (SHA-256) interface'
+[32m  TEST: TFM_NS_CRYPTO_TEST_1012 - PASSED!
+[0m> Executing 'TFM_NS_CRYPTO_TEST_1019' 
+  Description: 'Non Secure Unsupported HMAC (SHA-1) interface'
+[32m  TEST: TFM_NS_CRYPTO_TEST_1019 - PASSED!
+[0m> Executing 'TFM_NS_CRYPTO_TEST_1020' 
+  Description: 'Non Secure HMAC (SHA-256) interface'
+[32m  TEST: TFM_NS_CRYPTO_TEST_1020 - PASSED!
+[0m> Executing 'TFM_NS_CRYPTO_TEST_1024' 
+  Description: 'Non Secure HMAC with long key (SHA-224) interface'
+[32m  TEST: TFM_NS_CRYPTO_TEST_1024 - PASSED!
+[0m> Executing 'TFM_NS_CRYPTO_TEST_1030' 
+  Description: 'Non Secure AEAD (AES-128-CCM) interface'
+[32m  TEST: TFM_NS_CRYPTO_TEST_1030 - PASSED!
+[0m> Executing 'TFM_NS_CRYPTO_TEST_1031' 
+  Description: 'Non Secure AEAD (AES-128-GCM) interface'
+[32m  TEST: TFM_NS_CRYPTO_TEST_1031 - PASSED!
+[0m> Executing 'TFM_NS_CRYPTO_TEST_1032' 
+  Description: 'Non Secure key policy interface'
+[32m  TEST: TFM_NS_CRYPTO_TEST_1032 - PASSED!
+[0m> Executing 'TFM_NS_CRYPTO_TEST_1033' 
+  Description: 'Non Secure key policy check permissions'
+[32m  TEST: TFM_NS_CRYPTO_TEST_1033 - PASSED!
+[0m> Executing 'TFM_NS_CRYPTO_TEST_1035' 
+  Description: 'Non Secure AEAD interface with truncated auth tag (AES-128-CCM-8)'
+[32m  TEST: TFM_NS_CRYPTO_TEST_1035 - PASSED!
+[0m> Executing 'TFM_NS_CRYPTO_TEST_1036' 
+  Description: 'Non Secure TLS 1.2 PRF key derivation'
+[32m  TEST: TFM_NS_CRYPTO_TEST_1036 - PASSED!
+[0m> Executing 'TFM_NS_CRYPTO_TEST_1037' 
+  Description: 'Non Secure TLS-1.2 PSK-to-MasterSecret key derivation'
+[32m  TEST: TFM_NS_CRYPTO_TEST_1037 - PASSED!
+[0m> Executing 'TFM_NS_CRYPTO_TEST_1038' 
+  Description: 'Non Secure HKDF key derivation'
+[32m  TEST: TFM_NS_CRYPTO_TEST_1038 - PASSED!
+[0m> Executing 'TFM_NS_CRYPTO_TEST_1039' 
+  Description: 'Non Secure ECDH key agreement'
+[32m  TEST: TFM_NS_CRYPTO_TEST_1039 - PASSED!
+[0m> Executing 'TFM_NS_CRYPTO_TEST_1040' 
+  Description: 'Non Secure Symmetric encryption (AES-128-OFB) interface'
+[32m  TEST: TFM_NS_CRYPTO_TEST_1040 - PASSED!
+[0m> Executing 'TFM_NS_CRYPTO_TEST_1041' 
+  Description: 'Non Secure Symmetric encryption (AES-128-ECB) interface'
+[32m  TEST: TFM_NS_CRYPTO_TEST_1041 - PASSED!
+[0m> Executing 'TFM_NS_CRYPTO_TEST_1042' 
+  Description: 'Non Secure Asymmetric encryption interface (RSA-OAEP)'
+[32m  TEST: TFM_NS_CRYPTO_TEST_1042 - PASSED!
+[0m> Executing 'TFM_NS_CRYPTO_TEST_1043' 
+  Description: 'Non Secure Asymmetric encryption interface (RSA-PKCS1V15)'
+[32m  TEST: TFM_NS_CRYPTO_TEST_1043 - PASSED!
+[0m> Executing 'TFM_NS_CRYPTO_TEST_1044' 
+  Description: 'Non Secure Sign and verify message interface (DETERMINISTIC_ECDSA-SECP256R1-SHA256)'
+[32m  TEST: TFM_NS_CRYPTO_TEST_1044 - PASSED!
+[0m> Executing 'TFM_NS_CRYPTO_TEST_1053' 
+  Description: 'Non Secure Sign and verify hash interface (ECDSA-SECP256R1-SHA256)'
+hash: 8d2da5845d2bc7b6ec66509e1899606983ed46e21bb4bd4ddc8161ab5eb7cf54
+signature: 0d960ee38e85d4f6ebbc13573b480a1ca066d81a66611c49445b6d7c1fb6730861cfee12f60024c8aa8244e5607c4c37e79abff3ec690b94c7de32823428cef9
+[32m  TEST: TFM_NS_CRYPTO_TEST_1053 - PASSED!
+[0m> Executing 'TFM_NS_CRYPTO_TEST_1056' 
+  Description: 'Non Secure Sign and verify hash interface (ECDSA-SECP384R1-SHA384)'
+P384 is unsupported. Skipping...
+[32m  TEST: TFM_NS_CRYPTO_TEST_1056 - PASSED!
+[0m> Executing 'TFM_NS_CRYPTO_TEST_1045' 
+  Description: 'Non Secure Symmetric encryption (AES-128-CBC-PKCS7) interface'
+[32m  TEST: TFM_NS_CRYPTO_TEST_1045 - PASSED!
+[0m> Executing 'TFM_NS_CRYPTO_TEST_1046' 
+  Description: 'Non Secure Symmetric encryption (AES-128-CBC-PKCS7) interface, shorter'
+[32m  TEST: TFM_NS_CRYPTO_TEST_1046 - PASSED!
+[0m> Executing 'TFM_NS_CRYPTO_TEST_1047' 
+  Description: 'Non Secure Symmetric encryption (AES-128-CBC-PKCS7) interface, longer'
+[32m  TEST: TFM_NS_CRYPTO_TEST_1047 - PASSED!
+[0m> Executing 'TFM_NS_CRYPTO_TEST_1050' 
+  Description: 'Non Secure RSASSA-PSS signature verification (RSASSA-PSS-SHA256)'
+[32m  TEST: TFM_NS_CRYPTO_TEST_1050 - PASSED!
+[0m> Executing 'TFM_NS_CRYPTO_TEST_1054' 
+  Description: 'Non Secure authenticator based on AEAD'
+REF(0)TAG: 0x60, 0x9b, 0x3d, 0x51, 0x91, 0x60, 0x8, 0x17, 0x82, 0xec, 0x63, 0x21, 0x3a, 0x4, 0xdc, 0x93, 
+REF(1)TAG: 0xff, 0x66, 0xb8, 0x6, 0x7b, 0x76, 0x91, 0x8f, 0x76, 0x49, 0x2e, 0x56, 0xe2, 0xa2, 0x80, 0x62, 
+REF(0)TAG: 0x59, 0x93, 0x96, 0x41, 0x29, 0xe6, 0xe4, 0x25, 0x41, 0xcc, 0x64, 0x90, 0x6e, 0xdf, 0x4c, 0xee, 
+REF(1)TAG: 0x5e, 0x29, 0xf4, 0x3c, 0xe9, 0x94, 0x2e, 0xa4, 0xc3, 0x9d, 0x61, 0x91, 0x9a, 0x46, 0xf5, 0x75, 
+[32m  TEST: TFM_NS_CRYPTO_TEST_1054 - PASSED!
+[0m> Executing 'TFM_NS_CRYPTO_TEST_1057' 
+  Description: 'Non Secure SP800-108 Counter CMAC key derivation'
+Running SP800-108 CMAC vector #1 (with context)...
+Running SP800-108 CMAC vector #2 (without context)...
+All SP800-108 CMAC test vectors passed
+[32m  TEST: TFM_NS_CRYPTO_TEST_1057 - PASSED!
+[32mTESTSUITE PASSED!
+[33mRunning Test Suite Platform Service Non-Secure interface tests(TFM_NS_PLATFORM_TEST_1XXX)...
+[0m> Executing 'TFM_NS_PLATFORM_TEST_1001' 
+  Description: 'Minimal platform service test'
+[32m  TEST: TFM_NS_PLATFORM_TEST_1001 - PASSED!
+[32mTESTSUITE PASSED!
+[33mRunning Test Suite Initial Attestation Service non-secure interface tests(TFM_NS_ATTEST_TEST_1XXX)...
+[0m> Executing 'TFM_NS_ATTEST_TEST_1001' 
+  Description: 'ECDSA signature test of attest token'
+[INF] [Attest] The platform did not return a profile_definition
+[INF] [Attest] Encoding profile_definition (size: 17): PSA_IOT_PROFILE_1
+
+########### token(len: 550): ###########
+ 0xD2 0x84 0x43 0xA1 0x01 0x26 0xA0 0x59
+ 0x01 0xDA 0xAA 0x3A 0x00 0x01 0x24 0xFF
+ 0x58 0x40 0x00 0x00 0x00 0x00 0x00 0x00
+ 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00
+ 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00
+ 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00
+ 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00
+ 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00
+ 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00
+ 0x00 0x00 0x00 0x00 0x00 0x00 0x00 0x00
+ 0x00 0x00 0x3A 0x00 0x01 0x24 0xFB 0x58
+ 0x20 0xA0 0xA1 0xA2 0xA3 0xA4 0xA5 0xA6
+ 0xA7 0xA8 0xA9 0xAA 0xAB 0xAC 0xAD 0xAE
+ 0xAF 0xB0 0xB1 0xB2 0xB3 0xB4 0xB5 0xB6
+ 0xB7 0xB8 0xB9 0xBA 0xBB 0xBC 0xBD 0xBE
+ 0xBF 0x3A 0x00 0x01 0x25 0x00 0x58 0x21
+ 0x01 0x07 0x8C 0x18 0xF1 0x10 0xF4 0x32
+ 0xFF 0x78 0x0C 0xD8 0xDA 0xE5 0x80 0x69
+ 0xA2 0xA0 0xD8 0x22 0x77 0xCB 0xC6 0x64
+ 0x50 0xC8 0x58 0x1D 0xD4 0x7D 0x96 0xA2
+ 0x2E 0x3A 0x00 0x01 0x24 0xFA 0x58 0x20
+ 0xAA 0xAA 0xAA 0xAA 0xAA 0xAA 0xAA 0xAA
+ 0xBB 0xBB 0xBB 0xBB 0xBB 0xBB 0xBB 0xBB
+ 0xCC 0xCC 0xCC 0xCC 0xCC 0xCC 0xCC 0xCC
+ 0xDD 0xDD 0xDD 0xDD 0xDD 0xDD 0xDD 0xDD
+ 0x3A 0x00 0x01 0x24 0xF8 0x3A 0x3B 0xFF
+ 0xFF 0xFF 0x3A 0x00 0x01 0x24 0xF9 0x19
+ 0x30 0x00 0x3A 0x00 0x01 0x24 0xFD 0x82
+ 0xA5 0x01 0x63 0x53 0x50 0x45 0x04 0x65
+ 0x32 0x2E 0x33 0x2E 0x31 0x05 0x58 0x20
+ 0xE3 0x04 0x66 0xF6 0xB8 0x47 0x0C 0x1F
+ 0x29 0x07 0x0B 0x17 0xF1 0xE2 0xD3 0xE9
+ 0x4D 0x44 0x5E 0x3F 0x60 0x80 0x87 0xFD
+ 0xC7 0x11 0xE4 0x38 0x2B 0xB5 0x38 0xB6
+ 0x06 0x66 0x53 0x48 0x41 0x32 0x35 0x36
+ 0x02 0x58 0x20 0x21 0x9C 0x3A 0xB5 0x4E
+ 0x59 0x0D 0x80 0x6C 0x15 0x7A 0x56 0x98
+ 0x4C 0x9C 0x7E 0x5D 0x0C 0x35 0x23 0x0D
+ 0x8B 0x9C 0x08 0x5B 0x5F 0xE9 0x18 0xB0
+ 0x29 0xCD 0x3E 0xA5 0x01 0x64 0x4E 0x53
+ 0x50 0x45 0x04 0x65 0x30 0x2E 0x30 0x2E
+ 0x30 0x05 0x58 0x20 0x82 0xA5 0xB4 0x43
+ 0x59 0x48 0x53 0xD4 0xBF 0x0F 0xDD 0x89
+ 0xA9 0x14 0xA5 0xDC 0x16 0xF8 0x67 0x54
+ 0x82 0x07 0xD7 0x07 0x7E 0x74 0xD8 0x0C
+ 0x06 0x3E 0xFD 0xA9 0x06 0x66 0x53 0x48
+ 0x41 0x32 0x35 0x36 0x02 0x58 0x20 0xBB
+ 0x5E 0xBB 0x0F 0xB4 0x2C 0x10 0x3C 0x95
+ 0xE4 0x14 0x44 0x70 0x42 0xD5 0x5E 0x51
+ 0x58 0xE6 0x91 0xE0 0xB4 0x76 0x04 0x65
+ 0x68 0xE5 0xA4 0xB5 0x1A 0xCF 0xF4 0x3A
+ 0x00 0x01 0x24 0xF7 0x71 0x50 0x53 0x41
+ 0x5F 0x49 0x4F 0x54 0x5F 0x50 0x52 0x4F
+ 0x46 0x49 0x4C 0x45 0x5F 0x31 0x3A 0x00
+ 0x01 0x25 0x01 0x77 0x77 0x77 0x77 0x2E
+ 0x74 0x72 0x75 0x73 0x74 0x65 0x64 0x66
+ 0x69 0x72 0x6D 0x77 0x61 0x72 0x65 0x2E
+ 0x6F 0x72 0x67 0x3A 0x00 0x01 0x24 0xFC
+ 0x73 0x30 0x36 0x30 0x34 0x35 0x36 0x35
+ 0x32 0x37 0x32 0x38 0x32 0x39 0x2D 0x31
+ 0x30 0x30 0x31 0x30 0x58 0x40 0x07 0xEB
+ 0x7B 0xB6 0xBC 0x8C 0xBD 0xD1 0x19 0xFA
+ 0x34 0xE9 0xE5 0x29 0x64 0x4C 0xEF 0x30
+ 0xA1 0xF9 0xDC 0xF2 0x82 0xE7 0xB6 0x3A
+ 0xCF 0x63 0xC6 0x5B 0xD4 0x68 0xEE 0x1D
+ 0xC3 0x69 0x97 0xF0 0xAD 0x9D 0x43 0x57
+ 0x06 0x27 0xDC 0xD5 0x37 0x00 0x05 0x08
+ 0x6A 0xFE 0x88 0x5B 0x9C 0x58 0xA2 0x23
+ 0xB1 0xBD 0x80 0xBF 0xEE 0x8F
+############## token end  ##############
+[32m  TEST: TFM_NS_ATTEST_TEST_1001 - PASSED!
+[0m> Executing 'TFM_NS_ATTEST_TEST_1002' 
+  Description: 'Negative test cases for initial attestation service'
+[INF] [Attest] The platform did not return a profile_definition
+[INF] [Attest] Encoding profile_definition (size: 17): PSA_IOT_PROFILE_1
+[INF] [Attest] The platform did not return a profile_definition
+[INF] [Attest] Encoding profile_definition (size: 17): PSA_IOT_PROFILE_1
+[32m  TEST: TFM_NS_ATTEST_TEST_1002 - PASSED!
+[32mTESTSUITE PASSED!
+[33mRunning Test Suite TFM IRQ Test (TFM_IRQ_TEST_1xxx)...
+[0m> Executing 'TFM_NS_IRQ_TEST_FLIH_1101' 
+  Description: 'FLIH HANDLING not returning signal'
+[32m  TEST: TFM_NS_IRQ_TEST_FLIH_1101 - PASSED!
+[0m> Executing 'TFM_NS_IRQ_TEST_FLIH_1102' 
+  Description: 'FLIH HANDLING returning Signal'
+[32m  TEST: TFM_NS_IRQ_TEST_FLIH_1102 - PASSED!
+[32mTESTSUITE PASSED!
+[33m
+*** Non-secure test suites summary ***
+[0mTest suite 'SFN Backend NS test (TFM_NS_SFN_TEST_1XXX)' has[32m PASSED
+[0mTest suite 'PSA protected storage NS interface tests (TFM_NS_PS_TEST_1XXX)' has[32m PASSED
+[0mTest suite 'PSA internal trusted storage NS interface tests (TFM_NS_ITS_TEST_1XXX)' has[32m PASSED
+[0mTest suite 'Crypto non-secure interface test (TFM_NS_CRYPTO_TEST_1XXX)' has[32m PASSED
+[0mTest suite 'Platform Service Non-Secure interface tests(TFM_NS_PLATFORM_TEST_1XXX)' has[32m PASSED
+[0mTest suite 'Initial Attestation Service non-secure interface tests(TFM_NS_ATTEST_TEST_1XXX)' has[32m PASSED
+[0mTest suite 'TFM IRQ Test (TFM_IRQ_TEST_1xxx)' has[32m PASSED
+[33m
+*** End of Non-secure test suites ***
+[0mQEMU: Terminated
+

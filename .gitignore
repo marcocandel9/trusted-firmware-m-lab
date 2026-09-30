@@ -1,0 +1,20 @@
+# Downloaded dependenciese
+/trusted-firmware-m/
+/tf-m-tests/
+
+# Root build
+/build/
+
+# Experiment builds
+**/build/
+**/build_spe/
+**/build_test/
+
+# Virtual env and python caches
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# macOS generated filese
+.DS_Store

@@ -1,0 +1,12 @@
+diff --git a/tests_reg/test/secure_fw/suites/attestation/attest_token_test.c b/tests_reg/test/secure_fw/suites/attestation/attest_token_test.c
+index 36410d7..5f44dcf 100644
+--- a/tests_reg/test/secure_fw/suites/attestation/attest_token_test.c
++++ b/tests_reg/test/secure_fw/suites/attestation/attest_token_test.c
+@@ -15,6 +15,7 @@
+ #include "attest_token_decode.h"
+ #include "attest_token_test_values.h"
+ #include "test_log.h"
++#define DUMP_TOKEN
+ 
+ 
+ /**

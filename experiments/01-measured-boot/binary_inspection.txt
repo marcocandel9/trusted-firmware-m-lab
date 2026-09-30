@@ -1,0 +1,6 @@
+Launched command post build:
+arm-none-eabi-strings /work/build/01_measured_boot/build_test/bin/tfm_ns.bin | grep -i 'E1' > 01-measured-boot/binary_inspection.txt
+Output:
+Initial Attestation Service non-secure interface tests[E1](TFM_NS_ATTEST_TEST_1XXX)
+
+Result: the presence of E1 shows that the patch worked.

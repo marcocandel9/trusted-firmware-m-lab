@@ -1,0 +1,13 @@
+diff --git a/tests_reg/test/secure_fw/suites/attestation/non_secure/attest_asymmetric_ns_interface_testsuite.c b/tests_reg/test/secure_fw/suites/attestation/non_secure/attest_asymmetric_ns_interface_testsuite.c
+index a0e0d06..1754a48 100644
+--- a/tests_reg/test/secure_fw/suites/attestation/non_secure/attest_asymmetric_ns_interface_testsuite.c
++++ b/tests_reg/test/secure_fw/suites/attestation/non_secure/attest_asymmetric_ns_interface_testsuite.c
+@@ -43,7 +43,7 @@ register_testsuite_ns_attestation_interface(struct test_suite_t *p_test_suite)
+     list_size = (sizeof(attestation_interface_tests) /
+                  sizeof(attestation_interface_tests[0]));
+ 
+-    set_testsuite("Initial Attestation Service non-secure interface tests"
++    set_testsuite("Initial Attestation Service non-secure interface tests[E1]"
+                   "(TFM_NS_ATTEST_TEST_1XXX)",
+                   attestation_interface_tests, list_size, p_test_suite);
+ }

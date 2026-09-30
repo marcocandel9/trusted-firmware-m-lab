@@ -1,0 +1,13 @@
+diff --git a/tests_reg/test/secure_fw/suites/attestation/attest_token_test_values.h b/tests_reg/test/secure_fw/suites/attestation/attest_token_test_values.h
+index 22c94ee..c438f24 100644
+--- a/tests_reg/test/secure_fw/suites/attestation/attest_token_test_values.h
++++ b/tests_reg/test/secure_fw/suites/attestation/attest_token_test_values.h
+@@ -73,7 +73,7 @@
+ /* The 64 byte special option-packed nonce where option flags
+  * are packed in at the start. Binary. */
+ #define TOKEN_TEST_NONCE_BYTES \
+-    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, \
++    0x00, 0x00, 0x00, 0x00, 0xDE, 0xAD, 0xBE, 0xEF, \
+     0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, \
+     0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, \
+     0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, \
